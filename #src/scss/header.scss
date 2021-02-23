@@ -1,0 +1,77 @@
+header {
+    width:100%;
+    z-index: 50;
+    height:100px; //   Под подложку
+    position:fixed;  //      (.header__container->&::before)
+
+    padding-top: 30px;
+    box-sizing: border-box;
+} 
+
+.header__container {
+
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+    padding-left: 15px;
+    &::before {
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: 1; /*меню открывается под плашкой*/
+    } 
+}
+
+.header__logo {
+    padding-left: 15px;
+    z-index: 3;
+    width: $col-2;
+}
+
+.header__menu{
+    display: flex; //Для адаптива исп. в @media (max-width:1100px)
+    z-index: 3; 
+    width:$col-10;
+}
+
+.header__burger { /*Скрыть иконку бургера при большом разрешении*/
+    display:none;
+}
+
+.menu__body{
+    width:100%;
+    z-index: 0;
+    .menu__list {
+        
+        display:flex;
+        flex-direction:row;
+        justify-content: flex-end;
+
+        font-family: 'Open Sans', sans-serif;
+        font-size:14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        a {
+            padding: 8px 14px 8px 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+            text-decoration: none;
+            color:#fff;
+            &:hover {
+                color:#c69b6e;
+                border:1px solid #fff;
+                padding: 7px 13px 7px 13px;
+            }
+        }
+
+    }
+}
+

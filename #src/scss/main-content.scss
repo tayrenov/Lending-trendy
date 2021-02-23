@@ -1,0 +1,60 @@
+.main__content-wrapper {
+    width:100%;
+    position: relative;
+    background: url("/img/main-content-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main__content {
+        min-height:872px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        color:#fff;
+        & h1 {
+            position: relative;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 128px;
+            line-height: 153px;
+            text-align: center;
+            display: block;
+            width: 430px;
+            bottom:6px;
+            
+            &:after {
+                content: '';
+                position: absolute;
+                width:170px;
+                height:4px;
+                background:#c69b6e;
+                left:130px;
+                top:146px;
+            }
+        }
+
+        & span {
+            padding-top: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width:40px;
+        height: 40px;
+        border:1px solid #fff;
+        box-sizing: border-box;
+        position: absolute;
+        bottom:6.08272506%;
+        left:49.15%;
+        background:none;
+        &:hover {
+            border:1px solid #c69b6e;
+        }
+    }
+}

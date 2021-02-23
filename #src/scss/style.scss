@@ -1,0 +1,14 @@
+@import "fonts.scss";
+@import "reset.scss";
+@import "grid.scss";
+@import "media.scss";
+@import "header.scss";
+@import "main-content.scss";
+
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 1px;
+}
