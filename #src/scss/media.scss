@@ -3,9 +3,6 @@
     body.lock {           //Запрет скрола при открытом меню
         overflow: hidden; //
     }  
-    .header__container::before {
-        background-color:#272624;
-    }
     .header__logo {
         z-index:5;
     }
@@ -90,4 +87,38 @@
         &.active span {
             display:none;
         }
+}
+
+
+/********About**********/
+
+@media (max-width:1400px) {
+    .about_content {
+        align-items:center;
+        & .about_content-block {
+            margin:0;
+        }
+        & .right-block {
+        align-self: center;
+        margin: 0;
+        }
+        .about_center_line {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:610px) {
+    .about_content{
+
+    & .about_content-block {
+        justify-content: space-around;
+        width:100%;
+        padding: 0 20px 0 30px;   
+        & .about_content-text {
+            width:60%;
+        }     
+    }
+    }
+
 }

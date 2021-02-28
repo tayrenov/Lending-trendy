@@ -17,13 +17,18 @@ $col-3:100%/12*3;
 $col-2:100%/12*2;
 $col-1:100%/12;
 
-body{
-    min-height:3000px;
+html {
+    width:100%;
+}
+
+body {
+    width:100%;
+    min-width: 510px;
+    min-height:4000px;
 }
 
 ._container {
     width:$max-width;
-    min-width: 460px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
     box-sizing:border-box;

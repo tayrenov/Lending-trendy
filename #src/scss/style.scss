@@ -1,14 +1,31 @@
-@import "fonts.scss";
+
 @import "reset.scss";
 @import "grid.scss";
+@import "fonts.scss";
 @import "media.scss";
 @import "header.scss";
 @import "main-content.scss";
-
+@import "about.scss";
 
 picture {
     display: flex;
     justify-content: center;
     align-items:center;
     padding-top: 1px;
+}
+
+button {
+    width:170px;
+    height:32px;
+    text-transform: uppercase;
+    color:#fff;
+    background:#c69b6e;
+    border: none;
+    align-self:center;
+    z-index: 3;
+    outline: none
+}
+
+button:hover {
+    background:#866440;
 }

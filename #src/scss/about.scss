@@ -1,0 +1,175 @@
+.about {
+    min-height: 1005px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    &  .h1_subtitle {
+        margin-top: 15px;
+    }   
+    
+    .decor_underline {
+        width:170px;
+        height: 1px;
+        background:#cccccc;
+        margin-top: 100px;
+    }
+}
+
+.about_content {
+    width:100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 70px;
+
+    & .about_content-block {
+        width:430px;
+        height:155px;
+        padding: 0 40px 0 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 430px;
+        border: 1px solid #c69b6e;
+        margin:0 0 0 84px;
+
+        & .about_content-text {
+            width:260px;
+            height: 70px;
+            & span {
+                display: block;
+                margin-bottom: 20px;
+                color:#c69b6e;
+            }
+        }
+        & .about_block-img {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 70px;
+            height: 70px;
+            border: 1px solid #c69b6e;
+            box-sizing: border-box;
+        }
+    }
+
+    & .right-block {
+        align-self: flex-end;
+        margin:0 60px 0 0;
+    }
+
+    & .about_center_line {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        top:75px;
+        width:130px;
+        height: 565px;
+        color:#c69b6e;
+
+        &:before {
+            content:'';
+            position: absolute;
+            width:2px;
+            height:540px;
+            background:#cccccc;
+            left:65px;
+        }
+
+        & .left-line_block {
+            align-self: flex-start;
+            position: relative;
+        }
+
+        & .right-line_block:before {
+            content:'';
+            position: absolute;
+            width: 8px;
+            height:8px;
+            background:#c59a6d;
+            border:1px solid #fff;
+            right:59px;
+        }
+
+        & .right-line_block {
+            align-self: flex-end;
+            position: relative;
+        }
+
+        & .left-line_block:before {
+            content:'';
+            position: absolute;
+            width: 8px;
+            height:8px;
+            background:#c59a6d;
+            border:1px solid #fff;
+            left:61px;
+        }
+        & span:first-child {
+            margin-bottom: 190px;
+            align-self: flex-end;
+            position: relative;
+        }
+        & span:last-child {
+            margin-top: 190px;
+            align-self: flex-end;
+        }
+    }   
+}
+
+.about_team {
+    width:63.636363636%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+    & img {
+        border:1px solid  #ccc;
+        padding:10px;
+        margin-bottom: 25px;
+    }
+    & span {
+        position: relative;
+        color:#c59a6d;        
+    }
+    & span:after {
+        content:" / CFO";
+        position:relative;
+        color:#ccc;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    & .about_team-list_icon {
+        margin-top: 20px;
+        width:80px;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        & a {
+            width: 10px;
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & svg {
+                height: 13px;
+                fill:#ccc;
+            }
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            border:none;
+            padding: 0;
+        }
+    }
+}

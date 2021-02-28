@@ -1,2 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@mixin adaptiv-font($pcSize, $mobSize, $M-width) {
+ $addSize: $pcSize - $mobSize;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$M-width}));
+}
+
+h1 {
+    display: block;
+    margin-top: 96px;
+    font-size: 56px;
+    @include adaptiv-font(56,42,1600);
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+
+span {
+    @include adaptiv-font(18,14,1600);
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    @include adaptiv-font(14,12,1600); 
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;   
+}
+.h1_subtitle {
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    @include adaptiv-font(16,14,1600);
+    text-transform: none;
+}

@@ -22,7 +22,7 @@
             display: block;
             width: 430px;
             bottom:6px;
-            
+            margin:0;
             &:after {
                 content: '';
                 position: absolute;
@@ -34,11 +34,6 @@
             }
         }
 
-        & span {
-            padding-top: 5px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-        }
     }
 
     button {
