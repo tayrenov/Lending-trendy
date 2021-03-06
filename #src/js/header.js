@@ -20,16 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function addBackgroun_width() {
         if (window_width<=1100 && pageYscroll>280) {
             header_bg.classList.add('header__bg');
-        } else {
+        } else if (window_width>=1100){
             header_bg.classList.remove('header__bg');            
         }
     }
 
-    addBackgroun_width();
-
     window.onresize = function() {
         window_width = document.documentElement.clientWidth;
-        addBackgroun_width();
     };
 
     window.addEventListener('scroll', function() {

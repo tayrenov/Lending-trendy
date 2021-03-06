@@ -1,0 +1,119 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h1_subtitle {
+        padding-top: 20px;
+    }
+
+    .services__list {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+
+        .services__block {
+            min-height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 58px;
+            .services__block_icon {
+                width:130px;
+                height:130px;
+                border:1px solid #ccc; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 18px;
+
+                svg {
+                    width:60px;
+                    height:52px;
+                    fill: #c69b6e;
+                }
+            }
+            span {
+                align-items: center;
+                color:#c69b6e;
+            }
+            p {
+                display: block;
+                max-width: 300px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    } 
+}
+
+.decor_underline {
+    width:170px;
+    height:1px;
+    background:#ccc;
+    margin-top: 100px;
+}
+
+
+/******Price List*****/
+
+.price__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 103px;
+    
+    .price__list-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:21.951219512%;
+        height:505px;
+        background:#f6f6f6;
+        box-sizing: border-box;
+        transition: all 0.5s ease 0s;
+        span {
+            margin-top: 48px;
+            margin-bottom: 22px;
+            color:#c69b6e; 
+        }
+        h1 {
+            position: relative;
+            margin:0;
+            text-align: center;
+            font-size: 72px;
+            font-weight: 700;
+        }
+        p {
+            text-transform:none;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .price_decor-line {
+            margin-top: 28px;
+            margin-bottom: 28px;
+            width:70px;
+            height: 1px;
+            background:#c69b6e;
+        }
+        .price__list-block-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 35px;
+            li {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .price__list-block:hover {
+        background:#fff;
+        border:1px solid #c69b6e;
+    }
+}

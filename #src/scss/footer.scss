@@ -1,0 +1,25 @@
+footer {
+    background:#2c2b2a;
+    height:120px;
+    display: flex;
+    align-items: center;
+    .footer_container {
+        display: flex;
+        justify-content: space-around;
+        color:#fff;
+        .footer_icon {
+            height:20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            a {
+                margin-left: 20px;
+                svg {
+                    width:20px;
+                    height: 20px;
+                    fill: #fff;
+                }
+            }
+        }
+    }
+} 

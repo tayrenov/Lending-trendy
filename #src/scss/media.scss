@@ -122,3 +122,93 @@
     }
 
 }
+
+/****About*******/
+
+
+@media (max-width:1465px) {
+    .about_team {
+        justify-content: center;
+        align-items: center;
+        &-block {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 50px;
+        }        
+    }
+
+}
+
+/**********Slider ***********/
+
+
+@media (max-width:1470px) {
+    .works_slider .swiper-button-next {
+        position: absolute;
+        top:88%;
+        right: 41%;
+    }
+    .works_slider .swiper-button-prev {
+        position: absolute;
+        top:88%;
+        left:41%;
+    }
+}
+
+@media (max-width:1465px) {
+    .image-slider__block {
+        align-items: center;
+    }
+    .works_slider .image-slider .image-slider__block span:after{
+        left: 95px;
+    }
+    .about_team {
+        justify-content: center;
+        align-items: center;
+        &-block {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 50px;
+        }        
+    }
+
+}
+
+/**********Slider ***********/
+
+
+@media (max-width:900px) {
+
+    .works_slider .swiper-button-next {
+        display: none;
+    }
+    .works_slider .swiper-button-prev {
+        display: none;
+    }
+}
+
+
+/***********Price***********/
+
+@media (max-width:1005px) {
+    .services {
+        .price__list-block {
+            width:41.6666%;
+        }
+        .price__list-block:hover {
+            width:41.6666%;
+        }
+    }
+}
+
+@media (max-width:535px) {
+    .services {
+        .price__list-block {
+            width:83.333%;
+            margin-bottom: 50px;
+        }
+        .price__list-block:hover {
+            width:83.333%;
+        }
+    }
+}

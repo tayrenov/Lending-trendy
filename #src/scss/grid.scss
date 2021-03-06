@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    position: relative;
     width:100%;
     min-width: 510px;
     min-height:4000px;
@@ -29,7 +30,7 @@ body {
 
 ._container {
     width:$max-width;
-    padding: 0 15px 0 15px;
+    margin: 0 15px 0 15px;
     margin: 0 auto;
     box-sizing:border-box;
 }

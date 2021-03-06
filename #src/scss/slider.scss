@@ -1,0 +1,97 @@
+.works_slider {
+    width: 100%;
+    height:890px;
+    background:#1b1a18;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 95px;
+    & .h1_subtitle {padding-top: 20px;}
+    h1, .h1_subtitle {color:#fff};
+    .image-slider {
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 72px;
+        min-height: 607px;
+        box-sizing: border-box;
+        .image-slider__block{
+            display: flex;
+            flex-direction:column;
+
+            & img {
+                padding:15px;
+                border: 1px solid #c59a6d;
+                margin-bottom: 29px;
+            } 
+            & span {
+                color:#c59a6d;
+                margin-bottom: 23px;
+                position:relative;
+                padding-left: 23px;
+            }
+            & span:after {
+                position:absolute;
+                content:"";
+                width:70px;
+                height:1px;
+                background:#c59a6d;
+                top:28px;
+                left:20px;
+                
+            }
+            & p {
+
+                color:#fff;
+                padding-left: 23px;
+            }
+        }
+    }
+}
+
+.works_slider .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    position:absolute;
+    bottom: 0;
+    z-index: 50;
+    .swiper-pagination-bullet {
+        width:5px;
+        height:5px;
+        border-radius: 0;
+        border:1px solid #c59a6d;
+    }
+    .swiper-pagination-bullet-active {
+        background:#c59a6d;
+    }
+}
+
+.works_slider .swiper-button-next,.works_slider  .swiper-button-prev {
+    display: block;
+    position: relative;
+    width:56px;
+    height:56px;
+    box-sizing: border-box;
+    color: #c59a6d;
+    border:1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works_slider .swiper-button-next {
+    position: absolute;
+    top:88%;
+    right: 44.2%;
+}
+.works_slider .swiper-button-prev {
+    position: absolute;
+    top:88%;
+    left:44.2%;
+}
+.works_slider .swiper-button-next:after {
+    font-size: 18px;
+}
+.works_slider .swiper-button-prev:after {
+    font-size: 18px;
+}
+
+
