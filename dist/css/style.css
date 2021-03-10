@@ -374,7 +374,8 @@ header {
 .main__content-wrapper {
   width: 100%;
   position: relative;
-  background: url("/img/main-content-bg.jpg");
+  background: #2c2b2a;
+  background-image: url("img/main-content-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1402,4 +1403,4 @@ button:hover {
   }
 }
 
-.webp .main__content-wrapper{ background: url(/img/main-content-bg.webp); }
+.webp .main__content-wrapper{ background-image: url(img/main-content-bg.webp); }
